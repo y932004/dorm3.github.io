@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>國立台灣科技大學第三學生宿舍</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/styles.min.css?h=51a3dc46be9b9f91714755d28e0cc151">
+  <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+  <link rel="stylesheet" href="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.css" />
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.css' />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  
+  <script src="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <div id="navbarHeader" class="collapse bg-light">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-4 offset-md-1 py-4">
+                  <!-- Start: h4 contact --><h4 class="text-black-50">Contact</h4>
+                  <!-- End: h4 contact -->
+
+
+                  <!-- End: lists unordered -->
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container d-flex justify-content-between">
+        <img src=""  width=5% height=5%>
+        <a class="navbar-brand d-flex align-items-center" href="#">台科大第三宿舍</a><i class=""></i></button></div>
+  </div>
+</header>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+    <!--和js、css做連結-->
+    <script src="dorm3.js"></script>
+    <head>
+        <link rel="stylesheet" type="text/css" href="dorm3.css">
+    </head>
+    
+    <div class="header">
+        <div class="container">
+          <!--導覽列選項-->
+          <nav class="navbar">
+            <!--a href="dorm3.html" class="item">最新消息</a-->
+            <a href="dormpage1.html" class="item">相關規範</a>
+            <a href="dormpage2.html" class="item">冰箱規定</a>
+            <a href="dormpage3.html" class="item">報修專區</a>
+            <a href="dormpage4.html" class="item">宿舍環境</a>
+            <a href="dormpage5.html" class="item">幹部團隊</a>
+          </nav>
+        </div>
+      </div>
+</head>
+
+<main role="main">
+
+    <div class="container">
+        <div class="row">
+          <div class="card" style="width: 100%; max-width: 600px; margin: auto; position: relative; top: 30%;">
+            <div class="card-body">
+              <div class="row">
+                <!--map start-->
+                <div class="col-md-6">
+                  <div class="card" style="width: 100%; max-width: 350px; height: 230px; margin: 0 auto;">
+                    <div class="card-body">
+                      <div id="mapid" style="width: 100%; height: 100%;"></div>
+                      <script>
+                        var mymap = L.map('mapid').setView([25.0125138, 121.5422815], 18);
+                        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                          maxZoom: 18,
+                          attribution: '',
+                          id: 'mapbox.streets'
+                        }).addTo(mymap);
+                        var marker = L.marker([25.0125138, 121.5422815]).addTo(mymap); 
+                      </script>   
+                    </div>
+                  </div>
+                </div>
+                <!--map end-->        
+                <!--table start-->
+                <div class="col-md-6">
+                  <div class="card" style="width: 100%; max-width: 210px; height: 230px; margin: 0 auto;">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
+                        <table style="font-size: 10px;">
+                          <tr>
+                            <th colspan="2">房間相關資訊</th>
+                          </tr>
+                          <tr>
+                            <td>總樓層數</td>
+                            <td>11</td>
+                          </tr>
+                          <tr>
+                            <td>各樓房間數</td>
+                            <td>14</td>
+                          </tr>
+                          <tr>
+                            <td>房間格局</td>
+                            <td>6人套房</td>
+                          </tr>
+                          <tr>
+                            <td>學期收費(含寒假)</td>
+                            <td>$6800</td>
+                          </tr> 
+                          <tr>
+                            <td>暑期收費</td>
+                            <td>$3150</td>
+                          </tr> 
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--table end-->
+              </div>
+            </div>
+            <style>
+
+              .slick-slide img {
+                width: 90%;
+                height: 100;
+              }
+            </style>
+          
+          <div class="card" style="width: 100%; max-width: 510px; height: 510px; margin: auto;">
+            
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+          </head>
+          <body>
+            <div class="container bg-white p-5">
+              <div class="slider responsive">
+                <div>
+                  <img src="2.jpg" alt="">
+                </div>
+                <div>
+                  <img src="3.jpg" alt="">
+                </div>
+                <div>
+                  <img src="4.jpg" alt="">
+                </div>
+                <div>
+                  <img src="5.jpg" alt="">
+                </div>
+                <div>
+                  <img src="6.jpg" alt="">
+                </div>
+                <div>
+                  <img src="8.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          
+            <script>
+              $(".responsive").slick({
+                dots: true,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                responsive: [
+                  {
+                    breakpoint: 1024,
+                    settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                      infinite: true,
+                      dots: true
+                    }
+                  },
+                  {
+                    breakpoint: 600,
+                    settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                    }
+                  },
+                  {
+                    breakpoint: 480,
+                    settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                    }
+                  }
+                ]
+              });
+            </script>
+          </div> <!-- card end -->
+          </div>
+          </div>
+          </div>
+        </div> <!-- row end -->
+      </div> <!-- container end -->
+
+
+</body>
+</html>

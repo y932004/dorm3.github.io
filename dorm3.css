@@ -1,0 +1,118 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/*p4按鈕顏色*/
+.custom-btn {
+	background-color: transparent;
+	border-color: #a6a6a6;
+	font-size: 80%;
+
+	color: #a6a6a6;
+}
+.custom-btn:hover {
+	background-color: #ffffff;
+}
+
+/*到這*/
+body {
+	box-sizing: border-box;
+	font-family: "Noto Sans TC", sans-serif;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+a {
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: 300;
+}
+    /* CSS 樣式，用於水平放置按鈕與文字 */
+	.card-text {
+		display: flex;
+		align-items: center;
+	  }
+  
+	  .btn-group {
+		margin-left: auto; /* 將按鈕移到右側 */
+		display: flex;
+		align-items: center;
+	  }
+.header {
+	background-image: linear-gradient(90deg, #333, #555);
+
+	.container {
+		display: flex;
+		max-width: 1200px;
+		margin: 0 auto;
+		.logo {
+			margin-right: 1em;
+			display: flex;
+			align-items: center;
+			.fa-spotify {
+				padding-right: 0.5em;
+				color: #8f8f8f;
+			}
+			span {
+				font-size: 26px;
+				font-weight: 500;
+			}
+		}
+		.navbar {
+			display: flex;
+			align-items: center;
+			margin: auto;
+			.item {
+				flex-grow: 1;
+				padding: 20px;
+				border-bottom: 5px solid transparent;
+				transition: 0.3s;
+				&:hover {
+					border-bottom: 5px solid #ffffff;
+				}
+			}
+		}
+		.navSearch {
+			display: flex;
+			align-items: center;
+			margin-left: auto;
+			input,
+			button {
+				border: none;
+				outline: none;
+				height: 30px;
+				background-color: #646464;
+			}
+			input {
+				padding-left: 12px;
+				width: 80%;
+				border-radius: 100px 0 0 100px;
+			}
+			button {
+				width: 20%;
+				border-radius: 0 100px 100px 0;
+				cursor: pointer;
+				color: #555555;
+			}
+			.fa-search {
+				color: #555555;
+				&:hover {
+					color: #ffffff;
+					transition: all 0.3s;
+				}
+			}
+		}
+	}
+}
+
